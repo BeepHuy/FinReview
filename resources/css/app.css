@@ -1,3 +1,6 @@
+/* Google Fonts — PHẢI đứng trước @import tailwindcss */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400&family=Inter:wght@300;400;500;600&display=swap');
+
 @import 'tailwindcss';
 
 @source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
@@ -6,6 +9,58 @@
 @source '../**/*.js';
 
 @theme {
-    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-        'Segoe UI Symbol', 'Noto Color Emoji';
+    --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+}
+
+/* =====================================================
+   CSS VARIABLES — Design tokens toàn site
+   ===================================================== */
+:root {
+    --bg:           #f5f0eb;
+    --fg:           #1a1a1a;
+    --card:         #ffffff;
+    --muted:        #ede7e0;
+    --muted-fg:     #6b6560;
+    --border:       #d9d0c7;
+    --accent:       #c9a96e;
+    --accent-dark:  #b8934a;
+    --radius:       0.5rem;
+}
+
+/* =====================================================
+   BASE RESET
+   ===================================================== */
+html  { scroll-behavior: smooth; }
+body  {
+    box-sizing: border-box; margin: 0; padding: 0;
+    font-family: 'Inter', sans-serif;
+    background: var(--bg);
+    color: var(--fg);
+    font-size: 15px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+}
+h1,h2,h3,h4,h5,h6,.familyfont { font-family: 'Playfair Display', Georgia, serif; }
+a { text-decoration: none; }
+
+/* =====================================================
+   HERO — chỉ những gì Tailwind không làm được
+   ===================================================== */
+.hero-title {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 64px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    max-width: 760px;
+    margin-bottom: 20px;
+}
+
+/* stat divider dọc giữa các số */
+.stat-item { flex: 1; text-align: center; padding: 8px 16px; position: relative; }
+.stat-item:not(:last-child)::after {
+    content: '';
+    position: absolute; right: 0; top: 15%; height: 70%; width: 1px;
+    background: rgba(255,255,255,0.12);
 }
