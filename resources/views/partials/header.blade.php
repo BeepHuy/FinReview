@@ -82,20 +82,34 @@
         'insurance.underwriting':        '{{ route("insurance.fundamentals.underwriting") }}',
         'insurance.premium-calculation': '{{ route("insurance.fundamentals.premium-calculation") }}',
         'insurance.regulatory':          '{{ route("insurance.fundamentals.regulatory") }}',
+
         'insurance':         '{{ route("insurance") }}',
         'banking':           '{{ route("banking") }}',
         'credit-cards':      '{{ route("credit-cards") }}',
         'mortgages':         '{{ route("mortgages") }}',
         'personal-finance':  '{{ route("personal-finance") }}',
         'reviews':           '{{ route("reviews") }}',
+
         'insurance.categories.life':        '{{ route("insurance.categories.life") }}',
         'insurance.categories.health':      '{{ route("insurance.categories.health") }}',
         'insurance.categories.property':    '{{ route("insurance.categories.property") }}',
         'insurance.categories.auto':        '{{ route("insurance.categories.auto") }}',
         'insurance.categories.reinsurance': '{{ route("insurance.categories.reinsurance") }}',
+
         'insurance.insights.trends':        '{{ route("insurance.insights.trends") }}',
         'insurance.insights.insurtech':     '{{ route("insurance.insights.insurtech") }}',
         'insurance.insights.reports':       '{{ route("insurance.insights.reports") }}',
+
+        'banking.structure.retail-commercial': '{{ route("banking.structure.retail-commercial") }}',
+        'banking.structure.central-banking':   '{{ route("banking.structure.central-banking") }}',
+        'banking.structure.digital-banking':   '{{ route("banking.structure.digital-banking") }}',
+        'banking.structure.open-banking':      '{{ route("banking.structure.open-banking") }}',
+
+        'banking.products.deposit':      '{{ route("banking.products.deposit") }}',
+        'banking.products.lending':      '{{ route("banking.products.lending") }}',
+        'banking.products.corporate':    '{{ route("banking.products.corporate") }}',
+        'banking.products.cross-border': '{{ route("banking.products.cross-border") }}',
+        'banking.products.treasury':     '{{ route("banking.products.treasury") }}',
     };
 
     const MENUS = {
@@ -126,17 +140,17 @@
         },
         banking:{
             c1:{title:'Banking Structure',items:[
-                {t:'Retail vs Commercial Banking',h:'#'},
-                {t:'Central Banking Systems',     h:'#'},
-                {t:'Digital Banking Evolution',   h:'#'},
-                {t:'Open Banking',                h:'#'},
+                {t:'Retail vs Commercial Banking',h:R['banking.structure.retail-commercial']},
+                {t:'Central Banking Systems',     h:R['banking.structure.central-banking']},
+                {t:'Digital Banking Evolution',   h:R['banking.structure.digital-banking']},
+                {t:'Open Banking',                h:R['banking.structure.open-banking']},
             ]},
             c2:{title:'Banking Products',items:[
-                {l:'Deposit Products Analysis', h:'#'},
-                {l:'Lending Framework',         h:'#'},
-                {l:'Corporate Banking Services',h:'#'},
-                {l:'Cross-border Payments',     h:'#'},
-                {l:'Treasury Services',         h:'#'},
+                {l:'Deposit Products Analysis', h:R['banking.products.deposit']},
+                {l:'Lending Framework',         h:R['banking.products.lending']},
+                {l:'Corporate Banking Services',h:R['banking.products.corporate']},
+                {l:'Cross-border Payments',     h:R['banking.products.cross-border']},
+                {l:'Treasury Services',         h:R['banking.products.treasury']},
             ]},
             c3:{title:'Banking Industry Analysis',items:[
                 {l:'Profitability Metrics',       h:'#'},

@@ -37,4 +37,17 @@ class PageController extends Controller
     public function insuranceInsightsTrends()  { return view('pages.articles.insurance.insights.market-trends'); }
     public function insuranceInsightsTech()    { return view('pages.articles.insurance.insights.insurtech'); }
     public function insuranceInsightsReports() { return view('pages.articles.insurance.insights.global-reports'); }
+
+    // Banking Structure
+    public function bankingStructureRetailCommercial() { return view('pages.articles.banking.structure.retail-commercial'); }
+    public function bankingStructureCentralBanking()   { return view('pages.articles.banking.structure.central-banking'); }
+    public function bankingStructureDigitalBanking()   { return view('pages.articles.banking.structure.digital-banking'); }
+    public function bankingStructureOpenBanking()      { return view('pages.articles.banking.structure.open-banking'); }
+
+    // Banking Products
+    public function bankingProductsDeposit()     { return view('pages.articles.banking.products.deposit-banking'); }
+    public function bankingProductsLending()     { return view('pages.articles.banking.products.lending-banking'); }
+    public function bankingProductsCorporate()   { return view('pages.articles.banking.products.corporate-banking'); }
+    public function bankingProductsCrossBorder() { return view('pages.articles.banking.products.cross-banking'); }
+    public function bankingProductsTreasury()    { return view('pages.articles.banking.products.treasury-banking'); }
 }

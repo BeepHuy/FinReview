@@ -17,7 +17,7 @@
     <div class="absolute inset-0"style="background:linear-gradient(135deg,rgba(15,31,53,.92) 0%,rgba(26,48,80,.85) 60%,rgba(15,31,53,.75) 100%)"></div>
     <div class="absolute pointer-events-none"style="top:-100px;left:-100px;width:500px;height:500px;background:radial-gradient(circle,rgba(79,70,229,.2) 0%,transparent 70%)"></div>
 
-    <div class="relative px-[10%] py-14 max-w-[900px]">
+    <div class="relative max-w-screen-xl mx-auto py-12 px-12">
         <nav class="flex items-center gap-2 text-[12px] mb-7 text-white/40">
             <a href="{{ route('home') }}"class="text-white/40 hover:text-[#818cf8] transition-colors">Home</a>
             <span>/</span>
